@@ -37,8 +37,11 @@ python mnist_main_mpr.py  --nonlinear-model '2sq(Ax)+3sin(abs(Ax))+eta'   --num-
 (2) Run experiments on CelebA dataset 
 (2-1)  CelebA image recovery from measurement abs(Ax+eta)+5tanh(abs(Ax))
 
-python3 celebA_main_mpr.py   --nonlinear-model 'abs(Ax+eta)+5tanh(abs(Ax))' --num-outer-measurement-ls   2000 4000 6000 8000  --method-ls PPower APPGD MPRG --noise-std-ls 0.05 0.1 0.2 0.3 0.4 0.5 
+python celebA_main_mpr.py   --nonlinear-model 'abs(Ax+eta)+5tanh(abs(Ax))' --num-outer-measurement-ls   2000 4000 6000 8000  --method-ls PPower APPGD MPRG --noise-std-ls 0.05 0.1 0.2 0.3 0.4 0.5 
 
+(3) Run experiments using the architecture of gernerative prior in [3] 
+
+python mnist_main_mpr_relu.py  --nonlinear-model 'abs(Ax)'  --num-outer-measurement-ls 200 300 400 500 600 700 800   --max-update-iter 120  --method-ls MPRG --noise-std-ls  0.0  
 
 
 ## References
