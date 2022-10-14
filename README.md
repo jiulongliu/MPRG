@@ -46,4 +46,4 @@ python mnist_main_mpr_relu.py  --nonlinear-model 'abs(Ax)'  --num-outer-measurem
 
 ## References
 
-Large parts of the code are derived from [Bora et al.](https://github.com/AshishBora/csgm), [Hyder et al.](https://github.com/CSIPlab/appgd), [Liu et al.] (https://github.com/liuzq09/GenerativePCA)
+Large parts of the code are derived from [Bora et al.](https://github.com/AshishBora/csgm), [Hyder et al.](https://github.com/CSIPlab/appgd), [Liu et al.](https://github.com/liuzq09/GenerativePCA) 
